@@ -19,6 +19,8 @@ changelog="https://raw.githubusercontent.com/containers/podman/main/RELEASE_NOTE
 distfiles="https://github.com/containers/podman/archive/v${version}.tar.gz"
 checksum=5b4e9ddce69cc2c8c8b8529e90093ae3ea9cb2959e2fceb98469b282dbffbcc7
 
+export PATH="/usr/libexec/chroot-git:$PATH"
+
 if [ "$CROSS_BUILD" ]; then
 	go_build_tags+=" containers_image_openpgp"
 fi
