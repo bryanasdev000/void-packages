@@ -1,0 +1,14 @@
+# Template file for 'vector'
+pkgname=vector
+version=0.43.0
+revision=1
+build_style=cargo
+hostmakedepends="cmake pkg-config openssl-devel libzstd-devel oniguruma-devel protobuf protobuf-devel perl python libsasl-devel git"
+short_desc="Log shipper"
+maintainer="bryanasdev000 <bryanasdev000@gmail.com>"
+license="MPL-2.0"
+homepage="https://vector.dev"
+changelog="https://vector.dev/releases/"
+distfiles="https://github.com/vectordotdev/vector/archive/refs/tags/v${version}.tar.gz"
+checksum=29f986990f6315e62e31969666b05c8ae3ff4fbf3db5733921e7928b56a93be1
+#make_dirs="/var/log/dir 0755 root root"
